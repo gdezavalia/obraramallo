@@ -250,7 +250,7 @@
 <div class="container">
 
   <div class="toolbar">
-    <div class="toolbar-info">✅ Semana del 22/06 al 26/06/2026</div>
+    <div class="toolbar-info">✅ Semana del 29/06 al 03/07/2026</div>
     <div>
       <button onclick="window.print()">🖨 Imprimir / Guardar PDF</button>
     </div>
@@ -278,26 +278,31 @@
       <div>
         <div class="stat-label">Presup. inicial</div>
         <div class="stat-value">$38.107.214</div>
+        <div class="stat-sub">USD 27.219</div>
       </div>
       <div>
         <div class="stat-label">Adicionales aprob.</div>
         <div class="stat-value" style="color:var(--c-mo);">+$8.916.000</div>
+        <div class="stat-sub">USD 6.369 · 4 adicionales aprobados</div>
       </div>
       <div>
         <div class="stat-label">Presup. vigente</div>
         <div class="stat-value">$47.023.214</div>
+        <div class="stat-sub">USD 33.588</div>
       </div>
       <div>
         <div class="stat-label">Ejecutado</div>
-        <div class="stat-value">$6.400.000</div>
+        <div class="stat-value">$7.500.000</div>
+        <div class="stat-sub">USD 3.242*</div>
       </div>
       <div>
         <div class="stat-label">Saldo</div>
-        <div class="stat-value" style="color:var(--text-success);">$40.623.214</div>
+        <div class="stat-value" style="color:var(--text-success);">$39.523.214</div>
+        <div class="stat-sub">USD 30.346 aprox.</div>
       </div>
       <div>
         <div class="stat-label">% Ejecutado</div>
-        <div class="stat-value" style="color:var(--text-success);">13,6%</div>
+        <div class="stat-value" style="color:var(--text-success);">15,9%</div>
       </div>
     </div>
   </div>
@@ -309,18 +314,18 @@
     <div class="stats-grid">
       <div>
         <div class="stat-label">Total comprado</div>
-        <div class="stat-value" style="color:var(--c-mat); font-size:18px;">$4.829.791</div>
-        <div class="stat-sub">USD 3.391</div>
+        <div class="stat-value" style="color:var(--c-mat); font-size:18px;">$6.020.070</div>
+        <div class="stat-sub">USD 4.010*</div>
       </div>
       <div>
         <div class="stat-label">Pagado por cliente</div>
-        <div class="stat-value">$4.620.609</div>
-        <div class="stat-sub">96%</div>
+        <div class="stat-value">$5.790.799</div>
+        <div class="stat-sub">USD 3.977 · 96,2%</div>
       </div>
       <div>
         <div class="stat-label">Pagado por arquitecta</div>
-        <div class="stat-value">$209.182</div>
-        <div class="stat-sub">4%</div>
+        <div class="stat-value">$229.272</div>
+        <div class="stat-sub">USD 33 · 3,8%</div>
       </div>
     </div>
   </div>
@@ -329,13 +334,13 @@
   <div class="section-title">Honorarios (15%)</div>
   <div class="card">
     <div class="stat-label">Cobrado a la fecha</div>
-    <div class="stat-value" style="font-size:22px; color:var(--c-hon);">$1.684.469</div>
-    <div class="stat-sub">USD 1.183</div>
+    <div class="stat-value" style="font-size:22px; color:var(--c-hon);">$2.028.011</div>
+    <div class="stat-sub">USD 1.020*</div>
   </div>
 
   <!-- GRÁFICO -->
   <div class="card">
-    <div class="card-title">Evolución del gasto acumulado (por semana)</div>
+    <div class="card-title">Evolución del gasto acumulado</div>
     <div class="chart-container">
       <canvas id="chart-evol" style="display:block; width:100% !important; height:220px !important;"></canvas>
     </div>
@@ -347,82 +352,79 @@
     <table>
       <thead>
         <tr>
-          <th style="width:6%;">ID</th>
+          <th style="width:12%;">Fecha</th>
           <th>Concepto</th>
-          <th class="text-center" style="width:13%;">Estado</th>
-          <th class="text-right" style="width:15%;">Mano de obra</th>
-          <th class="text-right" style="width:14%;">Ejecutado</th>
-          <th class="text-center" style="width:10%;">Respaldo</th>
+          <th class="text-right" style="width:16%;">Mano de obra</th>
+          <th class="text-center" style="width:14%;">Estado</th>
+          <th class="text-center" style="width:10%;">Presup.</th>
         </tr>
       </thead>
       <tbody>
+
         <tr>
-          <td style="font-weight:500;">#1</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">05/06</td>
           <td>
             <div class="desc-cell">Calado de revoque viejo + cargado de escombros en contenedor + revoque nuevo + terminación con fino</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 16/06/2026</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 16/06</div>
           </td>
-          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
           <td class="text-right" style="font-weight:500;">$4.600.000</td>
-          <td class="text-right" style="color:var(--text-secondary);">$600.000</td>
+          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
           <td class="text-center">
-            <a href="https://drive.google.com/file/d/1TK_vzUDZgbkEKsawd6tS63H4oJJLQHq6/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adicional #1');" title="Ver presupuesto">📋</a>
+            <a href="https://drive.google.com/file/d/1TK_vzUDZgbkEKsawd6tS63H4oJJLQHq6/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adic. 1 · Revoque y escombros');" title="Ver presupuesto">📎</a>
           </td>
         </tr>
+
         <tr>
-          <td style="font-weight:500;">#2</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">19/06</td>
           <td>
             <div class="desc-cell">Agua caliente en baño asador</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 24/06/2026</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 24/06</div>
           </td>
-          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
           <td class="text-right" style="font-weight:500;">$400.000</td>
-          <td class="text-right" style="color:var(--text-tertiary);">$0</td>
-          <td class="text-center">
-            <a href="https://drive.google.com/file/d/1uLtmVhuXCI3TkxzMQ5sQ6zoR9sV4d-uA/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adicional #2');" title="Ver presupuesto">📋</a>
-          </td>
-        </tr>
-        <tr>
-          <td style="font-weight:500;">#3</td>
-          <td>
-            <div class="desc-cell">Instalación eléctrica nueva (de toda la vivienda)</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 24/06/2026</div>
-          </td>
           <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
-          <td class="text-right" style="font-weight:500;">$2.116.000</td>
-          <td class="text-right" style="color:var(--text-tertiary);">$0</td>
           <td class="text-center">
-            <a href="https://drive.google.com/file/d/1YGVfsSx1tpRUfdfScY1W3EgxVliDF9l-/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adicional #3');" title="Ver presupuesto">📋</a>
+            <a href="https://drive.google.com/file/d/1uLtmVhuXCI3TkxzMQ5sQ6zoR9sV4d-uA/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adic. 2 · Agua caliente baño asador');" title="Ver presupuesto">📎</a>
           </td>
         </tr>
+
         <tr>
-          <td style="font-weight:500;">#4</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">18/06</td>
+          <td>
+            <div class="desc-cell">Instalación eléctrica nueva de toda la vivienda</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 24/06 · revisión y desarmado de cajas para relevamiento de circuitos</div>
+          </td>
+          <td class="text-right" style="font-weight:500;">$2.116.000</td>
+          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
+          <td class="text-center">
+            <a href="https://drive.google.com/file/d/1YGVfsSx1tpRUfdfScY1W3EgxVliDF9l-/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adic. 3 · Instalación eléctrica');" title="Ver presupuesto">📎</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="color:var(--text-secondary); white-space:nowrap;">23/06</td>
           <td>
             <div class="desc-cell">Trabajos de techista</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 23/06/2026</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Aprobado el 23/06</div>
           </td>
-          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
           <td class="text-right" style="font-weight:500;">$1.800.000</td>
-          <td class="text-right" style="color:var(--text-secondary);">$1.000.000</td>
+          <td class="text-center"><span class="badge badge-ok">Aprobado</span></td>
           <td class="text-center">
-            <a href="https://drive.google.com/file/d/1Qrki8jG_U3XUEqZCYiEKrqOBnAkr9C0N/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adicional #4');" title="Ver presupuesto">📋</a>
+            <a href="https://drive.google.com/file/d/1Qrki8jG_U3XUEqZCYiEKrqOBnAkr9C0N/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pdf" onclick="event.preventDefault(); abrirModal(this.href, 'Presupuesto · Adic. 4 · Techista');" title="Ver presupuesto">📎</a>
           </td>
         </tr>
+
         <tr style="background:var(--bg-secondary);">
-          <td colspan="3" class="text-right" style="font-size:11px;text-transform:uppercase;color:var(--text-secondary);font-weight:500;">Total adicionales aprobados</td>
+          <td colspan="2" class="text-right" style="font-size:11px;text-transform:uppercase;color:var(--text-secondary);font-weight:500;">Total adicionales aprobados</td>
           <td class="text-right" style="font-weight:600; font-size:13px;">$8.916.000</td>
-          <td class="text-right" style="font-weight:600; font-size:13px;">$1.600.000</td>
-          <td></td>
+          <td colspan="2"></td>
         </tr>
+
       </tbody>
     </table>
-    <div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--border); font-size:11px; color:var(--text-tertiary);">
-      Los 4 adicionales suman <strong style="color:var(--text-primary);">$8.916.000</strong> de mano de obra, ya incorporados al presupuesto vigente. Ejecutado a la fecha: $1.600.000. Los materiales de cada adicional, cuando se compren, se cargan como gastos comunes.
-    </div>
   </div>
 
   <!-- MOVIMIENTOS DE LA SEMANA -->
-  <div class="section-title">Movimientos de la semana (22/06 al 26/06)</div>
+  <div class="section-title">Movimientos de la semana (29/06 al 03/07)</div>
   <div class="card">
     <table>
       <thead>
@@ -437,107 +439,115 @@
       <tbody>
 
         <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">22/06</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">29/06</td>
           <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
           <td>
-            <div class="desc-cell">Materiales varios <span style="color:var(--text-tertiary);">(no entró en la rendición de la semana pasada)</span></div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Corralón Construbanda</div>
-          </td>
-          <td class="text-right" style="font-weight:500;">$60.563</td>
-          <td class="text-center">
-            <a href="https://drive.google.com/file/d/1N2GvDGSoYHpiXsfeKVRL5w4V2IUqeQRy/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 22/06 · Corralón Construbanda');" title="Ver factura">📄</a>
-            <a href="https://drive.google.com/file/d/12ssjl0O4LsaICtjGljzMNfqayvlQGR-G/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 22/06 · Corralón Construbanda');" title="Ver comprobante">💳</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">23/06</td>
-          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
-          <td>
-            <div class="desc-cell">Cementos, hercal, finos, arena, discos y mandriles</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Corralón Solano Vera</div>
-          </td>
-          <td class="text-right" style="font-weight:500;">$572.500</td>
-          <td class="text-center">
-            <a href="https://drive.google.com/file/d/1bUl8vD61gDYjmZGHCR40G4KVExh8m7TE/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 23/06 · Corralón Solano Vera');" title="Ver factura">📄</a>
-            <a href="https://drive.google.com/file/d/1ofAu8_mXwhq4Z88J1RRBEdqoKraMto9g/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 23/06 · Corralón Solano Vera');" title="Ver comprobante">💳</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">24/06</td>
-          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
-          <td>
-            <div class="desc-cell">Material desplegado para parches de revoque en medianera</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">EMI</div>
-          </td>
-          <td class="text-right" style="font-weight:500;">$29.183</td>
-          <td class="text-center">
-            <a href="https://drive.google.com/file/d/1WQSNh_-hJ9OLFkVgCB4Jfp8HC8s15G73/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 24/06 · EMI');" title="Ver factura">📄</a>
-            <a href="https://drive.google.com/file/d/16pDekGmbpTnsPSJOTZEDAirdNk0sOOHl/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 24/06 · EMI');" title="Ver comprobante">💳</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">25/06</td>
-          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
-          <td>
-            <div class="desc-cell">Plavicon fibrado + rodillo + pincel para impermeabilizar terraza</div>
+            <div class="desc-cell">Membrana + pintura asfáltica para terminar de impermeabilizar terrazas</div>
             <div style="font-size:10px;color:var(--text-tertiary);">Pinturería España</div>
           </td>
-          <td class="text-right" style="font-weight:500;">$179.999</td>
+          <td class="text-right">
+            <div style="font-weight:500;">$90.069</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 60</div>
+          </td>
           <td class="text-center">
-            <a href="https://drive.google.com/file/d/1h0q02tZ_GZBonVv14cVhFXVa95k3B20G/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 25/06 · Pinturería España');" title="Ver factura">📄</a>
+            <a href="https://drive.google.com/file/d/1GuWm3-Ks3Z9j9t8Baw5agq0pve1qXZpw/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 29/06 · Membrana y pintura asfáltica');" title="Ver factura">📄</a>
+            <a href="https://drive.google.com/file/d/1xMugOo0E2Dv3edjf-_kxbAwt7os1ne5Y/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 29/06 · Membrana y pintura asfáltica');" title="Ver comprobante">💳</a>
           </td>
         </tr>
 
         <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">26/06</td>
-          <td><span class="badge" style="background:#534AB722;color:#534AB7;">Mano de obra</span></td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">01/07</td>
+          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
           <td>
-            <div class="desc-cell">Trabajos de techo sobre terraza — colocación de perfiles <span class="badge badge-info" style="font-size:9px;">Adicional #4</span></div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Ruben Ibiris</div>
+            <div class="desc-cell">Plástico</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Atenor</div>
           </td>
-          <td class="text-right" style="font-weight:500;">$1.000.000</td>
+          <td class="text-right">
+            <div style="font-weight:500;">$20.090</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 13</div>
+          </td>
           <td class="text-center">
-            <span class="sin-link">—</span>
+            <span class="sin-link" style="margin-right:4px;">Sin factura</span>
+            <a href="https://drive.google.com/file/d/1fZ5xoMeZDBtqfRRtyFXVF-r25pccz06s/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 01/07 · Plástico');" title="Ver comprobante">💳</a>
           </td>
         </tr>
 
         <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">26/06</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">02/07</td>
+          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
+          <td>
+            <div class="desc-cell">Compra de todos los materiales eléctricos para la instalación</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">El Rayo</div>
+          </td>
+          <td class="text-right">
+            <div style="font-weight:500;">$1.000.120</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 662</div>
+          </td>
+          <td class="text-center">
+            <a href="https://drive.google.com/file/d/1YYmKv5CfzA3WfudKxZ0MjAcYr3aBGHU3/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-fact" onclick="event.preventDefault(); abrirModal(this.href, 'Factura · 02/07 · Materiales eléctricos');" title="Ver factura">📄</a>
+            <a href="https://drive.google.com/file/d/1XafCAHD2BD8q9JEge2gQNLU-QQxTwdXV/view?usp=drive_link" target="_blank" rel="noopener" class="link-btn link-btn-pago" onclick="event.preventDefault(); abrirModal(this.href, 'Comprobante · 02/07 · Materiales eléctricos');" title="Ver comprobante">💳</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="color:var(--text-secondary); white-space:nowrap;">03/07</td>
+          <td><span class="badge" style="background:#1D9E7522;color:#1D9E75;">Materiales</span></td>
+          <td>
+            <div class="desc-cell">Limpieza de obra</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Contenedores Y.B.</div>
+          </td>
+          <td class="text-right">
+            <div style="font-weight:500;">$80.000</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 53</div>
+          </td>
+          <td class="text-center">
+            <span class="sin-link">Sin respaldo cargado</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="color:var(--text-secondary); white-space:nowrap;">03/07</td>
           <td><span class="badge" style="background:#534AB722;color:#534AB7;">Mano de obra</span></td>
           <td>
-            <div class="desc-cell">Avance de obra en medianera e impermeabilización de terraza</div>
+            <div class="desc-cell">Techos: limpieza, pintura e impermeabilización + pisos: extracción</div>
             <div style="font-size:10px;color:var(--text-tertiary);">José Ibáñez</div>
           </td>
-          <td class="text-right" style="font-weight:500;">$800.000</td>
+          <td class="text-right">
+            <div style="font-weight:500;">$800.000</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 530</div>
+          </td>
           <td class="text-center">
             <span class="sin-link">—</span>
           </td>
         </tr>
 
         <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">26/06</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">03/07</td>
           <td><span class="badge" style="background:#534AB722;color:#534AB7;">Mano de obra</span></td>
           <td>
-            <div class="desc-cell">Avance de obra conforme presupuesto original</div>
-            <div style="font-size:10px;color:var(--text-tertiary);">Federico Cabrera</div>
+            <div class="desc-cell">Avance de obra conforme al presupuesto</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">Fede Gramajo</div>
           </td>
-          <td class="text-right" style="font-weight:500;">$1.000.000</td>
+          <td class="text-right">
+            <div style="font-weight:500;">$300.000</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 199</div>
+          </td>
           <td class="text-center">
             <span class="sin-link">—</span>
           </td>
         </tr>
 
         <tr>
-          <td style="color:var(--text-secondary); white-space:nowrap;">26/06</td>
+          <td style="color:var(--text-secondary); white-space:nowrap;">03/07</td>
           <td><span class="badge" style="background:#185FA522;color:#185FA5;">Honorarios</span></td>
           <td>
             <div class="desc-cell">Visitas a obra de 2 a 3 veces por día, búsqueda de presupuestos y compras de materiales</div>
             <div style="font-size:10px;color:var(--text-tertiary);">Arq. Corina Vallejo · Arq. Cora Stagnetto</div>
           </td>
-          <td class="text-right" style="font-weight:500;">$546.337</td>
+          <td class="text-right">
+            <div style="font-weight:500;">$343.542</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 228</div>
+          </td>
           <td class="text-center">
             <span class="sin-link">—</span>
           </td>
@@ -546,20 +556,24 @@
         <!-- Total semana -->
         <tr style="background:var(--bg-secondary);">
           <td colspan="3" class="text-right" style="font-size:11px;text-transform:uppercase;color:var(--text-secondary);font-weight:500;">Total semana</td>
-          <td class="text-right" style="font-weight:600; font-size:13px;">$4.188.582</td>
+          <td class="text-right">
+            <div style="font-weight:600; font-size:13px;">$2.633.821</div>
+            <div style="font-size:10px;color:var(--text-tertiary);">USD 1.744</div>
+          </td>
           <td></td>
         </tr>
 
       </tbody>
     </table>
     <div style="margin-top:12px; padding-top:12px; border-top:1px dashed var(--border); font-size:11px; color:var(--text-tertiary); display:flex; gap:16px;">
-      <span>📄 Factura</span><span>💳 Comprobante de pago</span>
+      <span>📄 Factura</span><span>💳 Comprobante de pago</span><span>📎 Presupuesto adicional</span>
     </div>
   </div>
 
   <div class="footer-notes">
     <strong>Notas:</strong> Los íconos abren el comprobante en un visor integrado. Si no se previsualiza, abrilo en pestaña nueva.<br>
-    Actualizado al 26/06/2026 · Cotización USD inicial: $1.400 · Cotización USD promedio de la semana: $1.424
+    Actualizado al 03/07/2026 · Cotización USD inicial: $1.400 · Cotización promedio semana en curso (29/06–03/07): $1.510.<br>
+    * Los totales acumulados marcados con asterisco son parciales: 3 gastos de mano de obra del 26/06 ($2.800.000), 1 gasto de materiales del 25/06 ($179.999) y 1 honorario del 26/06 ($546.337) todavía no tienen cotización cargada en la planilla y no están incluidos en su equivalente en USD.
   </div>
 
 </div>
@@ -607,7 +621,7 @@ document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') cerrarModal();
 });
 
-// Gráfico evolución acumulada — iniciado con requestAnimationFrame para garantizar render en mobile
+// Gráfico evolución acumulada — agregación semanal, iniciado con requestAnimationFrame para garantizar render en mobile
 function initChart() {
   const ctx = document.getElementById('chart-evol');
   if (!ctx || typeof Chart === 'undefined') {
@@ -617,10 +631,10 @@ function initChart() {
   new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ['01/06–05/06', '08/06–12/06', '15/06–19/06', '22/06–26/06'],
+      labels: ['Sem. 1 (01-05/06)', 'Sem. 2 (08-12/06)', 'Sem. 3 (15-19/06)', 'Sem. 4 (22-26/06)', 'Sem. 5 (29/06-03/07)'],
       datasets: [{
         label: 'Gasto acumulado',
-        data: [2642516, 5644133, 8725678, 12914260],
+        data: [2642516, 5644133, 8725678, 12914260, 15548081],
         borderColor: '#1D9E75',
         backgroundColor: 'rgba(29,158,117,0.15)',
         fill: true,
@@ -642,7 +656,7 @@ function initChart() {
             font: { size: 11 }
           }
         },
-        x: { ticks: { font: { size: 10 }, maxRotation: 0 } }
+        x: { ticks: { font: { size: 10 }, maxRotation: 45 } }
       }
     }
   });
